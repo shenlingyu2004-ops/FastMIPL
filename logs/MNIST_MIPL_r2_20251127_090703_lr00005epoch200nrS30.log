@@ -1,0 +1,240 @@
+[2025-11-27 09:07:03,714 utils.py:82 -             <module>() ]INFO >>> Record the params Namespace(no_cuda=False, epochs=200, reg=0.0001, seed=123, data_path='./data', exp_dir='./logs/', index='index', ds='MNIST_MIPL', ds_suffix='r2', bs=350, nr_fea=784, nr_class=5, nr_samples=30, nr_trial=1, normalize=False, lr=0.0005, smoke_test=False, debug=False, cuda=True)
+
+[2025-11-27 09:07:03,824 main.py:27 -             <module>() ]INFO >>> MAT File Name: MNIST_MIPL_r2.mat
+[2025-11-27 09:07:11,242 main.py:44 -             <module>() ]INFO >>> 	GPU is available!
+[2025-11-27 09:07:11,265 main.py:57 -             <module>() ]INFO >>> 	================================ START ========================================
+[2025-11-27 09:07:11,272 main.py:65 -             <module>() ]INFO >>> 	----------------time: 0, fold: index1.mat ----------------
+[2025-11-27 09:07:20,781 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -2.0816, 'll': 4.9974, 'kld': 2.9158, 'epoch': 1, 'step': 0}
+[2025-11-27 09:07:25,809 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -8.1094, 'll': 11.0157, 'kld': 2.9063, 'epoch': 10, 'step': 0}
+[2025-11-27 09:07:28,069 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -26.8986, 'll': 29.7868, 'kld': 2.8883, 'epoch': 20, 'step': 0}
+[2025-11-27 09:07:30,303 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -49.7882, 'll': 52.6559, 'kld': 2.8678, 'epoch': 30, 'step': 0}
+[2025-11-27 09:07:32,597 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -87.4999, 'll': 90.347, 'kld': 2.8471, 'epoch': 40, 'step': 0}
+[2025-11-27 09:07:34,814 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -111.78, 'll': 114.6066, 'kld': 2.8266, 'epoch': 50, 'step': 0}
+[2025-11-27 09:07:36,874 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -128.3208, 'll': 131.1272, 'kld': 2.8064, 'epoch': 60, 'step': 0}
+[2025-11-27 09:07:38,952 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -139.0857, 'll': 141.8722, 'kld': 2.7865, 'epoch': 70, 'step': 0}
+[2025-11-27 09:07:41,046 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -149.7038, 'll': 152.4705, 'kld': 2.7667, 'epoch': 80, 'step': 0}
+[2025-11-27 09:07:43,102 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -160.1874, 'll': 162.9345, 'kld': 2.7471, 'epoch': 90, 'step': 0}
+[2025-11-27 09:07:45,173 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -170.4622, 'll': 173.19, 'kld': 2.7278, 'epoch': 100, 'step': 0}
+[2025-11-27 09:07:47,226 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -180.6051, 'll': 183.3139, 'kld': 2.7088, 'epoch': 110, 'step': 0}
+[2025-11-27 09:07:49,278 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -190.0637, 'll': 192.7538, 'kld': 2.6901, 'epoch': 120, 'step': 0}
+[2025-11-27 09:07:51,314 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -199.4854, 'll': 202.1572, 'kld': 2.6718, 'epoch': 130, 'step': 0}
+[2025-11-27 09:07:53,332 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -209.4383, 'll': 212.0923, 'kld': 2.6539, 'epoch': 140, 'step': 0}
+[2025-11-27 09:07:55,373 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -217.9614, 'll': 220.5977, 'kld': 2.6364, 'epoch': 150, 'step': 0}
+[2025-11-27 09:07:57,394 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -227.3603, 'll': 229.9796, 'kld': 2.6192, 'epoch': 160, 'step': 0}
+[2025-11-27 09:08:02,169 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -236.1327, 'll': 238.7351, 'kld': 2.6024, 'epoch': 170, 'step': 0}
+[2025-11-27 09:08:04,484 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -245.6283, 'll': 248.2144, 'kld': 2.586, 'epoch': 180, 'step': 0}
+[2025-11-27 09:08:06,639 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -255.261, 'll': 257.831, 'kld': 2.57, 'epoch': 190, 'step': 0}
+[2025-11-27 09:08:08,650 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -264.2861, 'll': 266.8406, 'kld': 2.5545, 'epoch': 200, 'step': 0}
+[2025-11-27 09:08:08,811 main.py:110 -             <module>() ]INFO >>> test_acc: 1.000
+[2025-11-27 09:08:08,826 main.py:65 -             <module>() ]INFO >>> 	----------------time: 0, fold: index2.mat ----------------
+[2025-11-27 09:08:23,593 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': 1.4836, 'll': 1.4382, 'kld': 2.9218, 'epoch': 1, 'step': 0}
+[2025-11-27 09:08:25,323 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -7.5979, 'll': 10.5102, 'kld': 2.9124, 'epoch': 10, 'step': 0}
+[2025-11-27 09:08:27,265 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -28.7727, 'll': 31.667, 'kld': 2.8944, 'epoch': 20, 'step': 0}
+[2025-11-27 09:08:29,217 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -57.6293, 'll': 60.5032, 'kld': 2.874, 'epoch': 30, 'step': 0}
+[2025-11-27 09:08:31,152 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -89.681, 'll': 92.5344, 'kld': 2.8534, 'epoch': 40, 'step': 0}
+[2025-11-27 09:08:33,250 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -110.7892, 'll': 113.6223, 'kld': 2.833, 'epoch': 50, 'step': 0}
+[2025-11-27 09:08:38,191 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -124.6471, 'll': 127.4599, 'kld': 2.8128, 'epoch': 60, 'step': 0}
+[2025-11-27 09:08:40,560 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -136.3125, 'll': 139.1053, 'kld': 2.7928, 'epoch': 70, 'step': 0}
+[2025-11-27 09:08:42,932 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -147.0259, 'll': 149.7989, 'kld': 2.773, 'epoch': 80, 'step': 0}
+[2025-11-27 09:08:45,003 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -156.6198, 'll': 159.3731, 'kld': 2.7533, 'epoch': 90, 'step': 0}
+[2025-11-27 09:08:47,020 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -165.9958, 'll': 168.7297, 'kld': 2.7339, 'epoch': 100, 'step': 0}
+[2025-11-27 09:08:49,359 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -176.3519, 'll': 179.0668, 'kld': 2.7148, 'epoch': 110, 'step': 0}
+[2025-11-27 09:08:51,691 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -185.5031, 'll': 188.1992, 'kld': 2.6961, 'epoch': 120, 'step': 0}
+[2025-11-27 09:08:53,929 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -195.131, 'll': 197.8087, 'kld': 2.6777, 'epoch': 130, 'step': 0}
+[2025-11-27 09:08:56,146 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -204.1507, 'll': 206.8104, 'kld': 2.6597, 'epoch': 140, 'step': 0}
+[2025-11-27 09:08:58,328 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -212.3367, 'll': 214.9787, 'kld': 2.6421, 'epoch': 150, 'step': 0}
+[2025-11-27 09:09:00,555 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -222.4529, 'll': 225.0778, 'kld': 2.6249, 'epoch': 160, 'step': 0}
+[2025-11-27 09:09:02,604 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -232.2752, 'll': 234.8833, 'kld': 2.6081, 'epoch': 170, 'step': 0}
+[2025-11-27 09:09:04,760 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -240.9359, 'll': 243.5276, 'kld': 2.5917, 'epoch': 180, 'step': 0}
+[2025-11-27 09:09:06,770 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -249.0297, 'll': 251.6054, 'kld': 2.5757, 'epoch': 190, 'step': 0}
+[2025-11-27 09:09:11,647 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -258.2968, 'll': 260.8569, 'kld': 2.5602, 'epoch': 200, 'step': 0}
+[2025-11-27 09:09:11,827 main.py:110 -             <module>() ]INFO >>> test_acc: 1.000
+[2025-11-27 09:09:11,847 main.py:65 -             <module>() ]INFO >>> 	----------------time: 0, fold: index3.mat ----------------
+[2025-11-27 09:09:20,458 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': 3.5995, 'll': -0.6736, 'kld': 2.9259, 'epoch': 1, 'step': 0}
+[2025-11-27 09:09:22,480 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -5.8545, 'll': 8.7711, 'kld': 2.9166, 'epoch': 10, 'step': 0}
+[2025-11-27 09:09:24,724 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -31.3849, 'll': 34.2838, 'kld': 2.8989, 'epoch': 20, 'step': 0}
+[2025-11-27 09:09:26,973 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -65.8582, 'll': 68.737, 'kld': 2.8788, 'epoch': 30, 'step': 0}
+[2025-11-27 09:09:29,365 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -98.9538, 'll': 101.8123, 'kld': 2.8584, 'epoch': 40, 'step': 0}
+[2025-11-27 09:09:31,659 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -122.7434, 'll': 125.5816, 'kld': 2.8382, 'epoch': 50, 'step': 0}
+[2025-11-27 09:09:33,964 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -137.4356, 'll': 140.2539, 'kld': 2.8183, 'epoch': 60, 'step': 0}
+[2025-11-27 09:09:36,450 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -149.4308, 'll': 152.2294, 'kld': 2.7985, 'epoch': 70, 'step': 0}
+[2025-11-27 09:09:38,806 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -157.7725, 'll': 160.5513, 'kld': 2.7788, 'epoch': 80, 'step': 0}
+[2025-11-27 09:09:41,120 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -170.1919, 'll': 172.9512, 'kld': 2.7593, 'epoch': 90, 'step': 0}
+[2025-11-27 09:09:43,451 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -178.3414, 'll': 181.0815, 'kld': 2.74, 'epoch': 100, 'step': 0}
+[2025-11-27 09:09:45,775 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -188.256, 'll': 190.9771, 'kld': 2.7211, 'epoch': 110, 'step': 0}
+[2025-11-27 09:09:48,182 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -198.1315, 'll': 200.8341, 'kld': 2.7025, 'epoch': 120, 'step': 0}
+[2025-11-27 09:09:50,482 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -206.9103, 'll': 209.5946, 'kld': 2.6843, 'epoch': 130, 'step': 0}
+[2025-11-27 09:09:52,480 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -214.6714, 'll': 217.3378, 'kld': 2.6664, 'epoch': 140, 'step': 0}
+[2025-11-27 09:09:54,469 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -225.0618, 'll': 227.7107, 'kld': 2.6489, 'epoch': 150, 'step': 0}
+[2025-11-27 09:09:56,511 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -232.8804, 'll': 235.5122, 'kld': 2.6318, 'epoch': 160, 'step': 0}
+[2025-11-27 09:09:58,563 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -242.2077, 'll': 244.8227, 'kld': 2.615, 'epoch': 170, 'step': 0}
+[2025-11-27 09:10:00,573 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -251.8653, 'll': 254.464, 'kld': 2.5987, 'epoch': 180, 'step': 0}
+[2025-11-27 09:10:02,601 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -260.1136, 'll': 262.6964, 'kld': 2.5828, 'epoch': 190, 'step': 0}
+[2025-11-27 09:10:04,582 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -270.1288, 'll': 272.6961, 'kld': 2.5673, 'epoch': 200, 'step': 0}
+[2025-11-27 09:10:04,741 main.py:110 -             <module>() ]INFO >>> test_acc: 0.993
+[2025-11-27 09:10:04,760 main.py:65 -             <module>() ]INFO >>> 	----------------time: 0, fold: index4.mat ----------------
+[2025-11-27 09:10:06,432 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': 1.2073, 'll': 1.7154, 'kld': 2.9227, 'epoch': 1, 'step': 0}
+[2025-11-27 09:10:08,198 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -4.5268, 'll': 7.4402, 'kld': 2.9134, 'epoch': 10, 'step': 0}
+[2025-11-27 09:10:10,129 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -25.4273, 'll': 28.3228, 'kld': 2.8955, 'epoch': 20, 'step': 0}
+[2025-11-27 09:10:12,075 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -56.5399, 'll': 59.4153, 'kld': 2.8754, 'epoch': 30, 'step': 0}
+[2025-11-27 09:10:14,045 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -93.6232, 'll': 96.4785, 'kld': 2.8552, 'epoch': 40, 'step': 0}
+[2025-11-27 09:10:18,827 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -116.555, 'll': 119.3901, 'kld': 2.8351, 'epoch': 50, 'step': 0}
+[2025-11-27 09:10:21,170 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -131.4714, 'll': 134.2866, 'kld': 2.8152, 'epoch': 60, 'step': 0}
+[2025-11-27 09:10:23,507 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -143.0556, 'll': 145.8508, 'kld': 2.7953, 'epoch': 70, 'step': 0}
+[2025-11-27 09:10:25,795 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -153.8356, 'll': 156.6111, 'kld': 2.7755, 'epoch': 80, 'step': 0}
+[2025-11-27 09:10:27,764 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -163.4942, 'll': 166.2501, 'kld': 2.7559, 'epoch': 90, 'step': 0}
+[2025-11-27 09:10:29,784 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -173.6759, 'll': 176.4124, 'kld': 2.7365, 'epoch': 100, 'step': 0}
+[2025-11-27 09:10:31,804 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -183.4576, 'll': 186.1751, 'kld': 2.7175, 'epoch': 110, 'step': 0}
+[2025-11-27 09:10:33,798 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -193.5241, 'll': 196.2229, 'kld': 2.6988, 'epoch': 120, 'step': 0}
+[2025-11-27 09:10:35,820 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -202.4095, 'll': 205.09, 'kld': 2.6804, 'epoch': 130, 'step': 0}
+[2025-11-27 09:10:37,927 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -211.3696, 'll': 214.0321, 'kld': 2.6625, 'epoch': 140, 'step': 0}
+[2025-11-27 09:10:40,066 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -221.0625, 'll': 223.7074, 'kld': 2.6449, 'epoch': 150, 'step': 0}
+[2025-11-27 09:10:42,163 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -229.912, 'll': 232.5398, 'kld': 2.6277, 'epoch': 160, 'step': 0}
+[2025-11-27 09:10:44,230 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -239.6658, 'll': 242.2767, 'kld': 2.611, 'epoch': 170, 'step': 0}
+[2025-11-27 09:10:46,318 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -248.2128, 'll': 250.8074, 'kld': 2.5946, 'epoch': 180, 'step': 0}
+[2025-11-27 09:10:48,343 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -257.6682, 'll': 260.2467, 'kld': 2.5786, 'epoch': 190, 'step': 0}
+[2025-11-27 09:10:50,450 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -267.0958, 'll': 269.6588, 'kld': 2.563, 'epoch': 200, 'step': 0}
+[2025-11-27 09:10:50,637 main.py:110 -             <module>() ]INFO >>> test_acc: 1.000
+[2025-11-27 09:10:50,658 main.py:65 -             <module>() ]INFO >>> 	----------------time: 0, fold: index5.mat ----------------
+[2025-11-27 09:10:54,175 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': 0.1745, 'll': 2.7498, 'kld': 2.9244, 'epoch': 1, 'step': 0}
+[2025-11-27 09:10:56,102 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -7.1672, 'll': 10.082, 'kld': 2.9149, 'epoch': 10, 'step': 0}
+[2025-11-27 09:10:58,371 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -25.612, 'll': 28.5087, 'kld': 2.8967, 'epoch': 20, 'step': 0}
+[2025-11-27 09:11:00,545 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -50.5234, 'll': 53.3994, 'kld': 2.876, 'epoch': 30, 'step': 0}
+[2025-11-27 09:11:02,677 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -78.5721, 'll': 81.427, 'kld': 2.8548, 'epoch': 40, 'step': 0}
+[2025-11-27 09:11:04,790 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -101.2714, 'll': 104.1052, 'kld': 2.8339, 'epoch': 50, 'step': 0}
+[2025-11-27 09:11:06,877 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -115.2411, 'll': 118.0544, 'kld': 2.8132, 'epoch': 60, 'step': 0}
+[2025-11-27 09:11:08,955 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -126.3735, 'll': 129.1663, 'kld': 2.7928, 'epoch': 70, 'step': 0}
+[2025-11-27 09:11:11,020 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -136.698, 'll': 139.4707, 'kld': 2.7728, 'epoch': 80, 'step': 0}
+[2025-11-27 09:11:13,077 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -145.8523, 'll': 148.6052, 'kld': 2.7529, 'epoch': 90, 'step': 0}
+[2025-11-27 09:11:15,154 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -155.4196, 'll': 158.1529, 'kld': 2.7334, 'epoch': 100, 'step': 0}
+[2025-11-27 09:11:17,350 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -164.9943, 'll': 167.7085, 'kld': 2.7142, 'epoch': 110, 'step': 0}
+[2025-11-27 09:11:19,520 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -175.0936, 'll': 177.7889, 'kld': 2.6953, 'epoch': 120, 'step': 0}
+[2025-11-27 09:11:21,708 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -183.0894, 'll': 185.7663, 'kld': 2.6768, 'epoch': 130, 'step': 0}
+[2025-11-27 09:11:23,945 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -192.6687, 'll': 195.3274, 'kld': 2.6587, 'epoch': 140, 'step': 0}
+[2025-11-27 09:11:28,116 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -201.9585, 'll': 204.5995, 'kld': 2.641, 'epoch': 150, 'step': 0}
+[2025-11-27 09:11:30,395 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -210.944, 'll': 213.5676, 'kld': 2.6236, 'epoch': 160, 'step': 0}
+[2025-11-27 09:11:32,652 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -220.1458, 'll': 222.7525, 'kld': 2.6067, 'epoch': 170, 'step': 0}
+[2025-11-27 09:11:34,740 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -229.6023, 'll': 232.1926, 'kld': 2.5902, 'epoch': 180, 'step': 0}
+[2025-11-27 09:11:36,836 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -238.2477, 'll': 240.8218, 'kld': 2.5741, 'epoch': 190, 'step': 0}
+[2025-11-27 09:11:38,938 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -246.514, 'll': 249.0724, 'kld': 2.5584, 'epoch': 200, 'step': 0}
+[2025-11-27 09:11:39,111 main.py:110 -             <module>() ]INFO >>> test_acc: 1.000
+[2025-11-27 09:11:39,136 main.py:65 -             <module>() ]INFO >>> 	----------------time: 0, fold: index6.mat ----------------
+[2025-11-27 09:11:41,060 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': 1.0634, 'll': 1.8588, 'kld': 2.9222, 'epoch': 1, 'step': 0}
+[2025-11-27 09:11:42,986 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -7.1146, 'll': 10.0274, 'kld': 2.9129, 'epoch': 10, 'step': 0}
+[2025-11-27 09:11:45,063 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -26.6826, 'll': 29.5775, 'kld': 2.8949, 'epoch': 20, 'step': 0}
+[2025-11-27 09:11:47,128 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -55.2756, 'll': 58.1499, 'kld': 2.8743, 'epoch': 30, 'step': 0}
+[2025-11-27 09:11:49,213 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -83.8014, 'll': 86.6545, 'kld': 2.8531, 'epoch': 40, 'step': 0}
+[2025-11-27 09:11:51,266 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -104.104, 'll': 106.9363, 'kld': 2.8323, 'epoch': 50, 'step': 0}
+[2025-11-27 09:11:53,325 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -118.0699, 'll': 120.8818, 'kld': 2.8118, 'epoch': 60, 'step': 0}
+[2025-11-27 09:11:55,405 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -130.0755, 'll': 132.8671, 'kld': 2.7917, 'epoch': 70, 'step': 0}
+[2025-11-27 09:11:57,630 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -139.8953, 'll': 142.667, 'kld': 2.7717, 'epoch': 80, 'step': 0}
+[2025-11-27 09:12:01,959 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -149.2924, 'll': 152.0443, 'kld': 2.7519, 'epoch': 90, 'step': 0}
+[2025-11-27 09:12:04,173 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -158.7102, 'll': 161.4426, 'kld': 2.7324, 'epoch': 100, 'step': 0}
+[2025-11-27 09:12:06,301 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -168.8152, 'll': 171.5284, 'kld': 2.7132, 'epoch': 110, 'step': 0}
+[2025-11-27 09:12:08,439 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -175.6556, 'll': 178.35, 'kld': 2.6944, 'epoch': 120, 'step': 0}
+[2025-11-27 09:12:10,459 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -185.5117, 'll': 188.1876, 'kld': 2.6759, 'epoch': 130, 'step': 0}
+[2025-11-27 09:12:12,484 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -194.7235, 'll': 197.3813, 'kld': 2.6578, 'epoch': 140, 'step': 0}
+[2025-11-27 09:12:14,526 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -203.1943, 'll': 205.8344, 'kld': 2.64, 'epoch': 150, 'step': 0}
+[2025-11-27 09:12:16,633 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -211.5141, 'll': 214.1368, 'kld': 2.6227, 'epoch': 160, 'step': 0}
+[2025-11-27 09:12:18,652 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -220.5579, 'll': 223.1637, 'kld': 2.6058, 'epoch': 170, 'step': 0}
+[2025-11-27 09:12:20,702 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -230.7486, 'll': 233.3379, 'kld': 2.5893, 'epoch': 180, 'step': 0}
+[2025-11-27 09:12:22,753 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -238.6743, 'll': 241.2474, 'kld': 2.5731, 'epoch': 190, 'step': 0}
+[2025-11-27 09:12:24,806 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -248.6457, 'll': 251.2031, 'kld': 2.5574, 'epoch': 200, 'step': 0}
+[2025-11-27 09:12:24,971 main.py:110 -             <module>() ]INFO >>> test_acc: 1.000
+[2025-11-27 09:12:24,990 main.py:65 -             <module>() ]INFO >>> 	----------------time: 0, fold: index7.mat ----------------
+[2025-11-27 09:12:26,812 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': 4.5197, 'll': -1.6018, 'kld': 2.9179, 'epoch': 1, 'step': 0}
+[2025-11-27 09:12:28,661 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -6.3828, 'll': 9.2913, 'kld': 2.9085, 'epoch': 10, 'step': 0}
+[2025-11-27 09:12:30,722 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -36.0172, 'll': 38.9078, 'kld': 2.8906, 'epoch': 20, 'step': 0}
+[2025-11-27 09:12:32,815 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -77.2176, 'll': 80.0878, 'kld': 2.8702, 'epoch': 30, 'step': 0}
+[2025-11-27 09:12:36,599 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -105.6659, 'll': 108.5155, 'kld': 2.8496, 'epoch': 40, 'step': 0}
+[2025-11-27 09:12:38,773 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -120.5949, 'll': 123.4241, 'kld': 2.8292, 'epoch': 50, 'step': 0}
+[2025-11-27 09:12:41,024 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -134.2425, 'll': 137.0514, 'kld': 2.8089, 'epoch': 60, 'step': 0}
+[2025-11-27 09:12:43,215 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -147.3055, 'll': 150.0944, 'kld': 2.7888, 'epoch': 70, 'step': 0}
+[2025-11-27 09:12:45,383 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -156.0902, 'll': 158.8592, 'kld': 2.7689, 'epoch': 80, 'step': 0}
+[2025-11-27 09:12:47,605 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -166.7198, 'll': 169.4691, 'kld': 2.7493, 'epoch': 90, 'step': 0}
+[2025-11-27 09:12:49,762 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -176.75, 'll': 179.4799, 'kld': 2.7299, 'epoch': 100, 'step': 0}
+[2025-11-27 09:12:51,850 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -184.461, 'll': 187.1719, 'kld': 2.7109, 'epoch': 110, 'step': 0}
+[2025-11-27 09:12:54,109 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -194.211, 'll': 196.9032, 'kld': 2.6922, 'epoch': 120, 'step': 0}
+[2025-11-27 09:12:56,299 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -202.2732, 'll': 204.947, 'kld': 2.6739, 'epoch': 130, 'step': 0}
+[2025-11-27 09:12:58,439 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -210.5571, 'll': 213.213, 'kld': 2.6559, 'epoch': 140, 'step': 0}
+[2025-11-27 09:13:00,690 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -220.7896, 'll': 223.4279, 'kld': 2.6383, 'epoch': 150, 'step': 0}
+[2025-11-27 09:13:02,921 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -228.7836, 'll': 231.4046, 'kld': 2.6211, 'epoch': 160, 'step': 0}
+[2025-11-27 09:13:05,184 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -238.6529, 'll': 241.2572, 'kld': 2.6043, 'epoch': 170, 'step': 0}
+[2025-11-27 09:13:07,506 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -246.9931, 'll': 249.581, 'kld': 2.5879, 'epoch': 180, 'step': 0}
+[2025-11-27 09:13:11,426 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -255.3899, 'll': 257.9618, 'kld': 2.5718, 'epoch': 190, 'step': 0}
+[2025-11-27 09:13:13,764 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -265.6141, 'll': 268.1704, 'kld': 2.5563, 'epoch': 200, 'step': 0}
+[2025-11-27 09:13:13,949 main.py:110 -             <module>() ]INFO >>> test_acc: 1.000
+[2025-11-27 09:13:13,977 main.py:65 -             <module>() ]INFO >>> 	----------------time: 0, fold: index8.mat ----------------
+[2025-11-27 09:13:16,018 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -2.5368, 'll': 5.4497, 'kld': 2.913, 'epoch': 1, 'step': 0}
+[2025-11-27 09:13:18,042 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -8.0391, 'll': 10.9427, 'kld': 2.9036, 'epoch': 10, 'step': 0}
+[2025-11-27 09:13:20,302 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -27.1029, 'll': 29.9886, 'kld': 2.8858, 'epoch': 20, 'step': 0}
+[2025-11-27 09:13:22,567 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -50.6775, 'll': 53.5429, 'kld': 2.8654, 'epoch': 30, 'step': 0}
+[2025-11-27 09:13:24,864 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -79.3308, 'll': 82.1754, 'kld': 2.8446, 'epoch': 40, 'step': 0}
+[2025-11-27 09:13:27,052 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -103.8709, 'll': 106.695, 'kld': 2.8241, 'epoch': 50, 'step': 0}
+[2025-11-27 09:13:29,255 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -121.7972, 'll': 124.6013, 'kld': 2.8041, 'epoch': 60, 'step': 0}
+[2025-11-27 09:13:31,500 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -133.3139, 'll': 136.0982, 'kld': 2.7844, 'epoch': 70, 'step': 0}
+[2025-11-27 09:13:33,755 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -145.1257, 'll': 147.8904, 'kld': 2.7647, 'epoch': 80, 'step': 0}
+[2025-11-27 09:13:36,031 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -154.3022, 'll': 157.0474, 'kld': 2.7452, 'epoch': 90, 'step': 0}
+[2025-11-27 09:13:38,201 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -164.9439, 'll': 167.6698, 'kld': 2.7259, 'epoch': 100, 'step': 0}
+[2025-11-27 09:13:40,407 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -174.4718, 'll': 177.1787, 'kld': 2.7069, 'epoch': 110, 'step': 0}
+[2025-11-27 09:13:44,224 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -184.2646, 'll': 186.9528, 'kld': 2.6882, 'epoch': 120, 'step': 0}
+[2025-11-27 09:13:46,338 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -190.7131, 'll': 193.3829, 'kld': 2.6698, 'epoch': 130, 'step': 0}
+[2025-11-27 09:13:48,495 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -201.0294, 'll': 203.6813, 'kld': 2.6518, 'epoch': 140, 'step': 0}
+[2025-11-27 09:13:50,676 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -209.3201, 'll': 211.9543, 'kld': 2.6342, 'epoch': 150, 'step': 0}
+[2025-11-27 09:13:52,895 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -219.3499, 'll': 221.9669, 'kld': 2.617, 'epoch': 160, 'step': 0}
+[2025-11-27 09:13:55,110 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -228.1968, 'll': 230.797, 'kld': 2.6001, 'epoch': 170, 'step': 0}
+[2025-11-27 09:13:57,269 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -237.574, 'll': 240.1577, 'kld': 2.5837, 'epoch': 180, 'step': 0}
+[2025-11-27 09:13:59,439 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -245.8272, 'll': 248.3949, 'kld': 2.5677, 'epoch': 190, 'step': 0}
+[2025-11-27 09:14:01,597 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -256.1315, 'll': 258.6836, 'kld': 2.5521, 'epoch': 200, 'step': 0}
+[2025-11-27 09:14:01,771 main.py:110 -             <module>() ]INFO >>> test_acc: 1.000
+[2025-11-27 09:14:01,795 main.py:65 -             <module>() ]INFO >>> 	----------------time: 0, fold: index9.mat ----------------
+[2025-11-27 09:14:03,945 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -0.213, 'll': 3.1359, 'kld': 2.9229, 'epoch': 1, 'step': 0}
+[2025-11-27 09:14:05,861 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -5.1663, 'll': 8.0797, 'kld': 2.9134, 'epoch': 10, 'step': 0}
+[2025-11-27 09:14:07,945 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -29.5223, 'll': 32.4177, 'kld': 2.8954, 'epoch': 20, 'step': 0}
+[2025-11-27 09:14:10,023 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -61.5369, 'll': 64.4118, 'kld': 2.875, 'epoch': 30, 'step': 0}
+[2025-11-27 09:14:12,107 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -87.5733, 'll': 90.4277, 'kld': 2.8544, 'epoch': 40, 'step': 0}
+[2025-11-27 09:14:14,146 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -105.1061, 'll': 107.9403, 'kld': 2.8341, 'epoch': 50, 'step': 0}
+[2025-11-27 09:14:16,191 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -121.2736, 'll': 124.0877, 'kld': 2.8141, 'epoch': 60, 'step': 0}
+[2025-11-27 09:14:19,961 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -133.186, 'll': 135.9801, 'kld': 2.7941, 'epoch': 70, 'step': 0}
+[2025-11-27 09:14:22,022 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -144.293, 'll': 147.0672, 'kld': 2.7742, 'epoch': 80, 'step': 0}
+[2025-11-27 09:14:24,163 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -153.48, 'll': 156.2345, 'kld': 2.7545, 'epoch': 90, 'step': 0}
+[2025-11-27 09:14:26,253 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -163.7265, 'll': 166.4616, 'kld': 2.7351, 'epoch': 100, 'step': 0}
+[2025-11-27 09:14:28,310 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -173.5413, 'll': 176.2573, 'kld': 2.716, 'epoch': 110, 'step': 0}
+[2025-11-27 09:14:30,375 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -183.1905, 'll': 185.8878, 'kld': 2.6972, 'epoch': 120, 'step': 0}
+[2025-11-27 09:14:32,397 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -192.1232, 'll': 194.802, 'kld': 2.6789, 'epoch': 130, 'step': 0}
+[2025-11-27 09:14:34,456 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -200.4865, 'll': 203.1473, 'kld': 2.6609, 'epoch': 140, 'step': 0}
+[2025-11-27 09:14:36,553 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -209.9276, 'll': 212.5709, 'kld': 2.6433, 'epoch': 150, 'step': 0}
+[2025-11-27 09:14:38,660 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -219.3923, 'll': 222.0184, 'kld': 2.6261, 'epoch': 160, 'step': 0}
+[2025-11-27 09:14:40,825 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -228.1706, 'll': 230.7798, 'kld': 2.6093, 'epoch': 170, 'step': 0}
+[2025-11-27 09:14:42,997 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -236.4602, 'll': 239.053, 'kld': 2.5929, 'epoch': 180, 'step': 0}
+[2025-11-27 09:14:45,230 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -245.7353, 'll': 248.3121, 'kld': 2.5769, 'epoch': 190, 'step': 0}
+[2025-11-27 09:14:47,404 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -254.8135, 'll': 257.3747, 'kld': 2.5612, 'epoch': 200, 'step': 0}
+[2025-11-27 09:14:47,573 main.py:110 -             <module>() ]INFO >>> test_acc: 0.993
+[2025-11-27 09:14:47,595 main.py:65 -             <module>() ]INFO >>> 	----------------time: 0, fold: index10.mat ----------------
+[2025-11-27 09:14:49,425 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': 7.1002, 'll': -4.1764, 'kld': 2.9238, 'epoch': 1, 'step': 0}
+[2025-11-27 09:14:53,060 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -2.6082, 'll': 5.5225, 'kld': 2.9144, 'epoch': 10, 'step': 0}
+[2025-11-27 09:14:55,263 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -24.2886, 'll': 27.185, 'kld': 2.8964, 'epoch': 20, 'step': 0}
+[2025-11-27 09:14:57,504 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -56.9654, 'll': 59.8413, 'kld': 2.8758, 'epoch': 30, 'step': 0}
+[2025-11-27 09:14:59,695 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -92.4948, 'll': 95.3497, 'kld': 2.8549, 'epoch': 40, 'step': 0}
+[2025-11-27 09:15:02,056 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -115.9863, 'll': 118.8206, 'kld': 2.8343, 'epoch': 50, 'step': 0}
+[2025-11-27 09:15:04,252 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -126.9817, 'll': 129.7957, 'kld': 2.814, 'epoch': 60, 'step': 0}
+[2025-11-27 09:15:06,370 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -137.1501, 'll': 139.9441, 'kld': 2.794, 'epoch': 70, 'step': 0}
+[2025-11-27 09:15:08,468 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -147.9705, 'll': 150.7446, 'kld': 2.7741, 'epoch': 80, 'step': 0}
+[2025-11-27 09:15:10,574 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -158.6741, 'll': 161.4285, 'kld': 2.7544, 'epoch': 90, 'step': 0}
+[2025-11-27 09:15:12,719 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -168.5338, 'll': 171.2688, 'kld': 2.735, 'epoch': 100, 'step': 0}
+[2025-11-27 09:15:14,981 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -177.4428, 'll': 180.1587, 'kld': 2.7159, 'epoch': 110, 'step': 0}
+[2025-11-27 09:15:17,177 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -187.3839, 'll': 190.081, 'kld': 2.6971, 'epoch': 120, 'step': 0}
+[2025-11-27 09:15:19,357 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -195.9795, 'll': 198.6583, 'kld': 2.6787, 'epoch': 130, 'step': 0}
+[2025-11-27 09:15:21,581 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -205.4666, 'll': 208.1274, 'kld': 2.6608, 'epoch': 140, 'step': 0}
+[2025-11-27 09:15:23,704 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -214.4666, 'll': 217.1097, 'kld': 2.6431, 'epoch': 150, 'step': 0}
+[2025-11-27 09:15:27,564 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -223.2318, 'll': 225.8578, 'kld': 2.6259, 'epoch': 160, 'step': 0}
+[2025-11-27 09:15:29,729 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -232.4632, 'll': 235.0723, 'kld': 2.6091, 'epoch': 170, 'step': 0}
+[2025-11-27 09:15:31,870 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -241.3807, 'll': 243.9734, 'kld': 2.5927, 'epoch': 180, 'step': 0}
+[2025-11-27 09:15:34,072 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -250.4945, 'll': 253.0712, 'kld': 2.5767, 'epoch': 190, 'step': 0}
+[2025-11-27 09:15:36,243 model.py:137 -                train() ]INFO >>> Loss Dict: {'loss': -258.5382, 'll': 261.0992, 'kld': 2.561, 'epoch': 200, 'step': 0}
+[2025-11-27 09:15:36,413 main.py:110 -             <module>() ]INFO >>> test_acc: 1.000
+[2025-11-27 09:15:36,434 main.py:117 -             <module>() ]INFO >>> The mean and std of accuracy at 1-th times 10 folds: 0.999, 0.003
+[2025-11-27 09:15:36,434 main.py:121 -             <module>() ]INFO >>> 	================================ END ========================================
+[2025-11-27 09:15:36,435 main.py:123 -             <module>() ]INFO >>> The mean and std of accuracy at 1 times 10 folds: 0.999, 0.003
+[2025-11-27 09:15:36,435 main.py:125 -             <module>() ]INFO >>> 	Running time is 505.169939994812 seconds.
+[2025-11-27 09:15:36,435 main.py:126 -             <module>() ]INFO >>> Training is finished.
