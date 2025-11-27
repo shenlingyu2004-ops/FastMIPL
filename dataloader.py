@@ -7,7 +7,7 @@ import random
 import torch
 import scipy.io as io
 import torch.utils.data as data_utils
-
+import gudhi as gd
  
 def to_categorical(y, nr_class):
     '''
@@ -97,6 +97,17 @@ def load_idx_mat(idx_file):
 
     return idx_tr, idx_te
 
+def compute_topological_features(bag, n_dim=2):
+    """计算单个包的持久同调特征"""
+    # 构建 Vietoris-Rips 复形
+    rips_complex = gd.RipsComplex(points=bag.numpy(), max_edge_length=0.5)
+    simplex_tree = rips_complex.create_simplex_tree(max_dimension=n_dim)
+    # 计算持久同调（出生-死亡时间）
+    persistence = simplex_tree.persistence()
+    # 提取拓扑特征（如各维度贝蒂数、持久熵等）
+    betti_numbers = simplex_tree.betti_numbers()  # 贝蒂数（0:连通分量, 1:孔洞数）
+    persist_entropy = gd.persistent_entropy(persistence)  # 持久熵
+    return np.concatenate([betti_numbers, [persist_entropy]])
 
 class MIPLDataset(data_utils.Dataset):
     def __init__(self, bags_list, partial_bag_lab, true_bag_lab, F):
@@ -115,27 +126,49 @@ class MIPLDataset(data_utils.Dataset):
         i_f = self.f[index]
         return bag, partial_bag_label, true_bag_label, i_f, index
 
-def create_bags(all_ins_fea, bag_idx_of_ins, dummy_ins_lab, bag_lab, 
-                 partial_bag_lab, idx_list):
-    bags_list = []
-    ins_lab = torch.empty(0, dtype=torch.uint8)
-    y_bag_partial = torch.empty(0, dtype=torch.float64)
-    true_bag_lab = torch.empty(0, dtype=torch.uint8)
+
+def create_bags(all_ins_fea, bag_idx_of_ins, dummy_ins_lab, bag_lab,
+                partial_bag_lab, idx_list):
+    bags_list = []  # 存储每个袋的实例特征
+    ins_lab = torch.empty(0, dtype=torch.uint8)  # 所有实例的标签
+    y_bag_partial = torch.empty(0, dtype=torch.float64)  # 袋的部分标签
+    true_bag_lab = torch.empty(0, dtype=torch.uint8)  # 袋的真实标签
+    bag_features = []  # 存储每个袋的统计特征
+
     for i in idx_list:
+        # 提取当前袋的实例索引和特征
         bag_idx_of_ins_a_bag = bag_idx_of_ins == i
         bag_idx_of_ins_a_bag = np.squeeze(bag_idx_of_ins_a_bag)
-        bag = all_ins_fea[bag_idx_of_ins_a_bag, :]
-        ins_lab = torch.cat((ins_lab, 
-                             dummy_ins_lab[bag_idx_of_ins_a_bag].squeeze(1)
-                             ), 0)
-        y_bag_partial = torch.cat((y_bag_partial, 
-                                   partial_bag_lab[i - 1, :].unsqueeze(0) 
-                                   ),0)
-        true_bag_lab = torch.cat((true_bag_lab, 
-                                  bag_lab[i - 1].view(1, 1)
-                                  ), 0)
+        bag = all_ins_fea[bag_idx_of_ins_a_bag, :]  # 形状：[实例数, 特征维度]
         bags_list.append(bag)
-    return bags_list, ins_lab, y_bag_partial, true_bag_lab
+
+        # 收集实例标签、袋的部分标签和真实标签（与原逻辑一致）
+        ins_lab = torch.cat((ins_lab,
+                             dummy_ins_lab[bag_idx_of_ins_a_bag].squeeze(1)), 0)
+        y_bag_partial = torch.cat((y_bag_partial,
+                                   partial_bag_lab[i - 1, :].unsqueeze(0)), 0)
+        true_bag_lab = torch.cat((true_bag_lab,
+                                  bag_lab[i - 1].view(1, 1)), 0)
+
+        # 计算袋级统计特征
+        bag_mean = bag.mean(dim=0)  # 均值
+        bag_max, _ = bag.max(dim=0)  # 最大值
+        bag_min, _ = bag.min(dim=0)  # 最小值
+        bag_std = bag.std(dim=0)  # 标准差（反映离散程度）
+        bag_median = bag.median(dim=0).values  # 中位数（抗极端值）
+        bag_range = bag_max - bag_min  # 极差（分布范围）
+        bag_mean_abs_dev = torch.abs(bag - bag_mean).mean(dim=0)  # 平均绝对偏差（抗极端值）
+
+        # 拼接所有统计特征（按需求选择，此处保留全部以展示）
+        current_bag_feat = torch.cat([
+            bag_mean, bag_max, bag_min,
+            bag_std, bag_median,
+            bag_range, bag_mean_abs_dev
+        ], dim=0)
+
+        bag_features.append(current_bag_feat)
+
+    return bags_list, ins_lab, y_bag_partial, true_bag_lab, bag_features
 
 
 def mil_collate_fn(batch):

@@ -68,15 +68,14 @@ if __name__ == "__main__":
             # Load the Index and Dataset
             idx_tr, idx_te = load_idx_mat(idx_file)
 
-            # Generate Bags based on Index and Dataset
-            x_tr, y_ins_tr, s_bag_tr, y_bag_tr = create_bags(all_ins_fea, bag_idx_of_ins, 
-                                                            dummy_ins_lab, bag_lab, 
-                                                            partial_bag_lab_processed, 
-                                                            idx_tr)
-            x_te, y_ins_te, s_bag_te, y_bag_te = create_bags(all_ins_fea, bag_idx_of_ins, 
-                                                            dummy_ins_lab, bag_lab, 
-                                                            partial_bag_lab_processed, 
-                                                            idx_te)
+            x_tr, y_ins_tr, s_bag_tr, y_bag_tr, bag_feats_tr = create_bags(all_ins_fea, bag_idx_of_ins,
+                                                                           dummy_ins_lab, bag_lab,
+                                                                           partial_bag_lab_processed,
+                                                                           idx_tr)
+            x_te, y_ins_te, s_bag_te, y_bag_te, bag_feats_te = create_bags(all_ins_fea, bag_idx_of_ins,
+                                                                           dummy_ins_lab, bag_lab,
+                                                                           partial_bag_lab_processed,
+                                                                           idx_te)
             cov_b = torch.ones((len(x_tr), 1))
 
             # Initial Model

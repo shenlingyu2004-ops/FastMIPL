@@ -42,6 +42,9 @@ parser.add_argument('--normalize', type=str2bool, default=False, help='normalize
 parser.add_argument('--lr', type=float, default=0.0005, metavar='LR', help='learning rate (default: 0.0005)')
 parser.add_argument('--smoke_test', type=str2bool, default=False, help='smoke_test, True or False')
 parser.add_argument('--debug', type=str2bool, default=False, metavar='Debug Flag', help='debug flagm True or False')
+parser.add_argument('--topo_smooth', type=float, default=0.1, help='拓扑平滑系数')
+parser.add_argument('--ot_reg', type=float, default=0.01, help='OT正则化系数')
+parser.add_argument('--pos_weight', type=float, default=0.5, help='正包约束权重')
 
 args = parser.parse_args()
 
